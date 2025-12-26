@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio Page</title>
+    <title>Raffik | Bio</title>
     <style>
-        /* Основной фон - темно-синий градиент */
         body {
             margin: 0;
             padding: 0;
@@ -16,9 +15,9 @@
             background: radial-gradient(circle at center, #1a2a6c, #0b1026, #000000);
             font-family: 'Inter', -apple-system, sans-serif;
             color: white;
+            text-align: center;
         }
 
-        /* Стеклянная карточка */
         .glass-card {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(15px);
@@ -26,13 +25,11 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 40px;
             padding: 50px 30px;
-            text-align: center;
             width: 90%;
             max-width: 380px;
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
         }
 
-        /* Контейнер для аватарки с крестом */
         .avatar-container {
             width: 100px;
             height: 100px;
@@ -46,13 +43,9 @@
             position: relative;
         }
 
-        /* Рисуем черный христианский крест через CSS */
-        .cross {
-            background: black;
-            position: absolute;
-        }
-        .cross-v { width: 8px; height: 50px; } /* Вертикальная перекладина */
-        .cross-h { width: 30px; height: 8px; top: 30px; } /* Горизонтальная перекладина */
+        .cross { background: black; position: absolute; }
+        .cross-v { width: 8px; height: 50px; }
+        .cross-h { width: 30px; height: 8px; top: 30px; }
 
         h1 {
             font-size: 28px;
@@ -69,7 +62,6 @@
             margin-bottom: 35px;
         }
 
-        /* Кнопки как на картинке */
         .btn-container {
             display: flex;
             flex-direction: column;
@@ -86,38 +78,31 @@
             font-weight: 500;
             font-size: 16px;
             transition: 0.3s all ease;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
 
         .btn:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-2px);
-            border-color: #38bdf8;
+            background: white;
+            color: #0b1026;
+            transform: translateY(-3px);
         }
     </style>
 </head>
 <body>
-
     <div class="glass-card">
         <div class="avatar-container">
             <div class="cross cross-v"></div>
             <div class="cross cross-h"></div>
         </div>
-        
         <h1>Raffik</h1>
-        
         <p class="bio-text">
             Дизайнер / Разработчик / Игроман.<br>
-            Занимаюсь разработкой ботов в телеграме.
-            Разработкой приложений и игр.
+            Разработка ботов, приложений и игр.
         </p>
-
         <div class="btn-container">
             <a href="https://t.me/Raffidzo" class="btn">Telegram Bio</a>
             <a href="https://t.me/Rafikprojects" class="btn">Мои работы</a>
             <a href="https://t.me/Rraaffidzo" class="btn">Личные сообщения</a>
         </div>
     </div>
-
 </body>
 </html>
